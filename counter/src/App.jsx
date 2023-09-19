@@ -5,15 +5,13 @@ function App() {
   const [count, setCount] = useState(0);
 
   const addValue = () => {
-    if (count === 20) {
-    } else {
+    if (count < 20) {
       setCount(count + 1);
     }
   };
 
   const removeValue = () => {
-    if (count === 0) {
-    } else {
+    if (count > 0) {
       setCount(count - 1);
     }
   };
