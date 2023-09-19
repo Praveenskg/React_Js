@@ -21,7 +21,9 @@ function App() {
       <h2>Counter value : {count}</h2>
       <button onClick={addValue}>Add Value</button>
 
-      <button onClick={removeValue}>Remove Value</button>
+      <button onClick={removeValue} disabled={count === 0}>
+        Remove Value
+      </button>
     </>
   );
 }
