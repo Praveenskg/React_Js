@@ -22,7 +22,7 @@ export const TodoSlice = createSlice({
       const { id, text } = action.payload;
       const todoToUpdate = state.find((todo) => todo.id === id);
       if (todoToUpdate) {
-        todoToUpdate.text = text; 
+        todoToUpdate.text = text;
       }
     },
   },
