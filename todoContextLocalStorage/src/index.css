@@ -28,3 +28,11 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-gray-400;
 }
+
+@layer base {
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
