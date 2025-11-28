@@ -1,12 +1,7 @@
 @import "tailwindcss";
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
-    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
     margin: 0;
     padding: 0;
@@ -60,6 +55,7 @@
 
   /* Touch optimization for mobile */
   @media (hover: none) and (pointer: coarse) {
+
     button,
     [role="button"] {
       -webkit-tap-highlight-color: transparent;
